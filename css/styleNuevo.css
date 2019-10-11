@@ -143,3 +143,23 @@ table .thead-green th {
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.tituloDetalleSiniestro h5{
+   padding-top: 10px;;
+}
+
+.tituloDetalleSiniestro i{
+    font-size:1rem;
+    color:#707070;
+    padding-top: 1.7rem;
+    padding-left: 1.7rem;
+}
+
+.tituloDatoSiniestro {
+    font-size:0.8rem;
+    color:#707070;
+}
+
+.datoSiniestro {
+    font-size:1rem;
+    color:#707070;
+}
