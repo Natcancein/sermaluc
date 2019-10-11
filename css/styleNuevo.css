@@ -132,7 +132,7 @@ border-bottom: 1px solid #dee2e6;
 }
 
 .textoTituloTablaEmbebida{
-   background: #CED1E880 0% 0% no-repeat padding-box;
+   background: #CED1E8  no-repeat padding-box;
      opacity: 1; 
      color: #101e8e;
      font-weight:normal;
@@ -150,6 +150,10 @@ border-bottom: 1px solid #dee2e6;
 
 .table-stripedSouthbridge tbody tr:nth-of-type(odd) {
     background-color: #49C3B133;
+}
+
+.table-stripedSouthbridgeBlue tbody tr:nth-of-type(odd) {
+    background-color: #F5F5FA;
 }
 
 .tablaMobile{
@@ -178,10 +182,16 @@ border-bottom: 1px solid #dee2e6;
 
 .tituloDatoPoliza, .tituloDatoSiniestro {
     font-size:0.8rem;
-    color:#707070;
+    color:#a8a8a8;
 }
 
 .datoPoliza, .datoSiniestro {
     font-size:1rem;
     color:#707070;
+}
+
+table .thead-blue th {
+    color: #111E90;
+    background-color: #CED1E8;
+    border-color: none;
 }
