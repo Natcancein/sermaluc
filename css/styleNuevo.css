@@ -49,6 +49,12 @@ nav img {
     font-size: 1.1em;
 }
 
+.boldTituloPequeno{
+    color: #707070;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color:#101E8E 
+}
 .lightTitulo{
     color: #707070;
     font-weight:lighter;
@@ -83,11 +89,19 @@ select.form-control:focus {
     background: #FFFFFF; 
     color:#101e8e;
     border: none!important;
-    padding-top: 35px;
-    padding-left: 60px;
-
+    white-space:normal !important;
+    word-wrap: break-word; 
+    width: 10rem;
+    padding:0;
 }
-
+.btnAplicar:hover{
+    background: #101e8e; 
+    color:#FFFFFF;
+    border: none!important;
+    white-space:normal !important;
+    word-wrap: break-word; 
+  
+}
 .boldTituloPolizas, .boldTituloSiniestro{
 color:#101E8E;
 }
@@ -103,6 +117,14 @@ table .thead-green th {
     font-size: 0.8rem;
 }
 
+.filaTabla1{
+border-bottom: 1px solid #dee2e6;
+}
+
+.flechaTabla {
+    width:24px;
+    float: left;
+}
 .tablaEmbebida{
   background: #FFFFFF 0% 0% no-repeat padding-box;  
   opacity: 1; 
