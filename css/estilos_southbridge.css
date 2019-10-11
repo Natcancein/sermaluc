@@ -1,0 +1,864 @@
+/**
+* styles.css
+*
+* Estos son los componentes de styles
+*
+* Índice
+* - Declaración de fuentes
+* - Configuración general de controles html
+* - Material Icons
+* - Estilos generales de grilla
+* - Configuración general de formularios
+* - Full Screen Dialog
+* - Medias Queries
+*/
+
+
+/*---------------------------------------------*\
+   Declaración de fuentes
+\*---------------------------------------------*/
+
+@font-face {
+  font-family: "GothamRoundedMedium";
+
+  src: url("../fonts/GothamRounded_eot/GothamRoundedMedium_21022.eot");
+  src: url("../fonts/GothamRounded_eot/GothamRoundedMedium_21022.eot?#iefix")
+       format("embedded-opentype"),
+	   url("../fonts/GothamRounded_woff/GothamRoundedMedium_21022.woff")
+       format("woff");
+}
+
+@font-face {
+  font-family: "GothamRounded-Book";
+
+  src: url("../fonts/GothamRounded_eot/GothamRoundedBook_21018.eot");
+  src: url("../fonts/GothamRounded_eot/GothamRoundedBook_21018.eot?#iefix")
+       format("embedded-opentype"),
+       url("../fonts/GothamRounded_woff/GothamRoundedBook_21018.woff")
+       format("woff");
+}
+
+@font-face {
+  font-family: "GothamRoundedBold";
+
+  src: url("../fonts/GothamRounded_eot/GothamRoundedBold_21016.eot");
+  src: url("../fonts/GothamRounded_eot/GothamRoundedBold_21016.eot?#iefix")
+       format("embedded-opentype"),
+       url("../fonts/GothamRounded_woff/GothamRoundedBold_21016.woff")
+       format("woff");
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/MaterialIcons/MaterialIcons-Regular.eot"); /* For IE6-8 */
+	src: local('Material Icons'),
+		 local('MaterialIcons-Regular'),
+		 url("../fonts/MaterialIcons/MaterialIcons-Regular.woff2") format('woff2'),
+		 url("../fonts/MaterialIcons/MaterialIcons-Regular.woff") format('woff'),
+		 url("../fonts/MaterialIcons/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+
+/*---------------------------------------------*\
+   Configuración general de controles html
+\*---------------------------------------------*/
+
+html,
+body,
+form,
+h1 {
+	font-family: "GothamRoundedMedium" !important;
+}
+
+input[type="radio"]:checked + .label:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+    opacity: 1;
+}
+
+input[type="radio"]:checked + .label {
+    border-color: #111E90;
+}
+
+a {
+	color: #111E90 !important;
+}
+
+
+/*---------------------------------------------*\
+			    Material Icons
+\*---------------------------------------------*/
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Tamaño de ícono preferido */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Soporte para todos los buscadores WebKit. */
+	-webkit-font-smoothing: antialiased;
+	/* Soporte para Safari y Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Soporte para Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Soporte para IE. */
+	font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 {
+	font-size: 18px;
+}
+
+.material-icons.md-20 {
+	font-size: 20px;
+}
+
+.material-icons.md-24 {
+	font-size: 24px;
+}
+
+.material-icons.md-36 {
+	font-size: 36px;
+}
+
+.material-icons.md-48 {
+	font-size: 48px;
+}
+
+/*---------------------------------------------*\
+		Estilos generales de grilla
+\*---------------------------------------------*/
+
+.table {
+	margin-bottom: 20px;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.table-responsive {
+	color: #5c6670 ! important;
+}
+
+.table-responsive td {
+	color: #5c6670 ! important;
+}
+
+/** 
+* Alinea a la izquierda el titulo en la cabecera de la tabla 
+*/
+.th:first-child {
+	text-align: left;
+	padding-left: 3rem; /* Para que este alineado con los numeros de la columna */
+}
+
+/** 
+ Establece el ancho de la columna "Acciones" en desktop 
+*/
+.td[tableheaddata=""] {
+	width: 10rem;
+}
+
+/** 
+* Letra de cabecera de tabla color azul sothbridge 
+*/
+.sb-background-azulClaro th {
+	color: #111e90 !important;
+	font-size: 1rem;
+	font-family: "GothamRounded-Book";
+}
+
+/** 
+* Se configura el icono editar que se urtiliza en las acciones 
+*/
+.icono-editar {
+	width: 16px;
+	min-height: 19px;
+	background-repeat: no-repeat !important;
+	background: transparent url("../images/icono-editar.png");
+}
+
+/** 
+* Se configura el icono tasa que se utiliza en las acciones 
+*/
+.icono-tasa {
+	width: 17px;
+	min-height: 19px;
+	background-repeat: no-repeat !important;
+	background: transparent url("../images/icono-tasa.png");
+}
+
+/** 
+* Establece el formato de los iconos acciones de cantidad 3 
+*/
+.fila-acciones-3 {
+	display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+	max-width: 125px;
+}
+
+/**
+* Tamaño y ubicación de la columna acciones 
+*/
+.columna-acciones {
+	width: 20%;
+	text-align: center;
+}
+
+/** 
+* Letra de cabecera de tabla color azul sothbridge 
+*/
+.sb-background-azulClaro th {
+	color: #111e90 !important;
+	font-size: 1rem;
+	font-family: "GothamRounded-Book";
+}
+
+/**
+* Mostrar botones de grilla
+*/
+.titulo-Tabla button {
+  display: none;
+}
+
+/*---------------------------------------------*\
+	  Configuración general de formularios
+\*---------------------------------------------*/
+
+
+/**
+* Letra Gris Southbridge 
+*/
+.sb-color-gris {
+	color: #717173 !important;
+}
+
+/**
+* Letra Azul Southbridge
+*/
+.sb-color-azul {
+	color: #111e90 !important;
+}
+
+/**
+* Fondo Azul Claro Southbridge
+*/
+.sb-background-azulClaro {
+	background: #ced1e8 !important;
+}
+
+/**
+* Estilo checkbox y/o radio buttons
+*/
+.form-check-titulo {
+    padding-left: 2.2rem;
+    text-align: left;
+}
+
+/**
+* Estilo checkbox y/o radio buttons
+*/
+.form-check-titulo label{
+    font-size: .800rem;
+	color: rgba(0,0,0,.26);
+}
+
+/**
+* Estilo checkbox y/o radio buttons
+*/
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+	text-align: left;
+}
+
+/**
+* Estilo radio buttons
+*/
+.radio {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 15px;
+}
+
+/**
+* Estilo radio buttons
+*/
+.radio-margen-inferior-2 {
+    margin-bottom: 5px;
+}
+
+/**
+* Estilo radio buttons
+*/
+.radio .label {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #A1A7AF;
+    border-radius: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/**
+* Estilo radio buttons
+*/
+.radio .label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #111E90;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.2s ease;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+/**
+* Oculto
+*/
+.hidden {
+    display: none;
+}
+
+/**
+* Fuente Gothambook
+*/
+.gotham-book {
+    font-family: GothamRounded-Book !important;
+}
+
+/**
+* Fuente estilo normal
+*/
+.font-style-normal {
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+/**
+* Estilo justificado al inicio
+*/
+.justify-content-start {
+    justify-content: flex-start!important;
+}
+
+/**
+* Estilo combos
+*/
+.custom-select:focus{
+	border-color:#111E90 !important;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.075),0 0 5px rgba(17,30,144,.5) !important;
+}
+
+/**
+* Estilo combos
+*/
+.custom-select{
+	color: #555559 !important;
+}
+
+/**
+* Fuente link button
+*/
+.lnk-accion {
+	font-size: 14px;
+}
+
+/**
+* Alineación link button
+*/
+.lnk-accion .material-icons{
+	vertical-align: bottom;
+}
+
+/**
+* Color link button
+*/
+.lnk-accion a{
+	text-decoration: none;
+	color: #111e90;
+}
+
+/**
+* Botón por defecto
+*/
+.btn-default {
+	color: #111E90 !important;
+}
+
+/**
+* Alineación derecha de div que contiene al botón
+*/
+.div-alinear-cont-der {
+	text-align: right !important;
+}
+
+/**
+* Alineación derecha abajo de div que contiene al botón
+*/
+.div-abajo-der {
+	position: absolute; 
+	bottom: 0px;
+	text-align: right;
+}
+
+/**
+* Configuración del contenedor de filto
+*/
+.filtro {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+* formato Switch
+*/
+.switch label .bmd-switch-track {
+	background-image: linear-gradient(90deg,rgba(0,0,0,.26) 0,rgba(0,0,0,.26) 50%,#ced1e8 0,#ced1e8);
+}
+
+/**
+* formato Switch
+*/
+.switch label input:checked+.bmd-switch-track:after {
+    background-color: #111e90;
+}
+
+/**
+* Color azul claro sb
+*/
+.sb-azulClaro
+{
+  color: #ced1e8;
+}
+
+/**
+* Color gris sb
+*/
+.sb-gris {
+  color:  #717173;
+}
+
+/**
+* Configuración h4 color azul
+*/
+.sb-h4-azul {
+  color: #111E90;
+  font-style: normal;
+}
+
+/**
+* Se ocultan los link de filtros
+*/
+.ocultarfiltro .btn-link {
+	display:none;
+}
+
+li .texto{
+	font-size: 1.1em !important;
+}
+
+.bmd-label-static{
+	font-size: .875rem !important;
+}
+
+.is-focused [class*=" bmd-label"],.is-focused [class^=bmd-label]{
+	color: #111E90 !important;
+}
+
+.custom-file-control,.form-control,.is-focused .custom-file-control,.is-focused .form-control{
+	background-image:linear-gradient(0deg,#111E90 2px,rgba(0,150,136,0) 0),
+	linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0) !important;
+}
+
+.custom-select:focus{
+	border-color:#111E90 !important;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.075),0 0 5px rgba(17,30,144,.5) !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before{
+	background-color: #111E90 !important;
+}
+
+.btn-outline-primary.custom-file-control:before,.btn.btn-outline-primary{
+	border-color:currentColor;
+	color: #111E90 !important;
+	background-color:transparent;
+	border:1px solid #111E90 !important;
+}
+
+.btn-outline-primary.focus,.btn-outline-primary:focus{
+	box-shadow:0 0 0 .2rem rgba(17,30,144,.5) !important;
+}
+.btn-primary.custom-file-control:before,.btn.btn-primary{
+	color: #111E90 !important;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label:before{
+	background-color: #111E90 !important;
+}
+
+.bmd-form-group .bmd-label-static,.bmd-form-group.is-filled .bmd-label-floating,.bmd-form-group .is-filled .bmd-label-floating,.bmd-form-group.is-focused .bmd-label-floating,.bmd-form-group .is-focused .bmd-label-floating{
+	top: .5rem !important;
+}
+
+.bajo{
+    padding-top: 15px !important;
+}
+
+.custom-select{
+	color: #555559 !important;
+}
+
+.right-inner-addon-search {
+  position: relative;
+}
+
+.right-inner-addon-search input {
+  padding-left: 20px;
+}
+
+.right-inner-addon-search i {
+  position: absolute;  
+  padding: 1px 1px;
+  pointer-events: none;
+}
+
+.vh-100{
+    height: 80vh;
+}
+
+.texto-search{
+    color: #111e90 ;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.datepicker{
+    color: #555559 !important;
+}
+
+.gj-icon.chevron-left:before{
+	content:"<" !important;
+}
+
+.gj-icon.chevron-right:before{
+	content:">" !important;
+}
+
+/*---------------------------------------------*\
+	          Full Screen Dialog
+\*---------------------------------------------*/
+
+.modal-dialog-slideout {
+  min-height: 100%; margin: 0 0 0 auto;
+  background: #fff;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%,0)scale(1);
+  transform: translate(100%,0)scale(1);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  display: flex;align-items: stretch;
+  -webkit-box-align: stretch;height: 100%;
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+  overflow-y: auto;overflow-x: hidden;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+.modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {
+  height: 69px; display: block;
+}
+
+.modal-dialog-slideout .modal-header h5 {
+  float:left;
+}
+
+.shadow {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+/**
+* Configuración del contenido del full screen
+*/
+.contenido-modal-dialog-1{
+	width: 630px;
+}
+
+
+/*---------------------------------------------*\
+				Medias Queries
+\*---------------------------------------------*/
+
+
+/**
+* Mobile y pequeñas tablets (Hasta 768 px)
+*/
+@media (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+	
+	/**
+	* Configuración título de grilla
+	*/
+	.titulo-Tabla {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	/**
+	* Configuración título de tabla
+	*/
+	.titulo-Tabla button {
+		display: block;
+	}
+
+	/**
+	* Configuración de filtro
+	*/
+	.filtro {
+		box-shadow: none;
+		display:none;
+	}
+	
+	/**
+	* Configuración de filtro
+	*/
+	.titulo-filtro {
+		display: flex;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+		padding-left: 0;
+		margin-bottom: 2rem;
+	}
+	
+	/**
+	* Configuración de filtro
+	*/
+	.titulo-filtro button {
+		display: block;
+	}
+
+	/**
+	* Oculta el filtro
+	*/
+	.filtro.ocultar-filtro {
+		display: none;
+	}
+	
+	/**
+	* Muestra el botón de cerrar filtro
+	*/
+	.ocultarfiltro .btn-link {
+		display:block;
+	}
+	
+	/**
+	* Muestra tabla
+	*/
+	.tabla {
+		display: block;
+	}
+	
+	/**
+	* Muestra tabla luego del filtro
+	*/
+	.filtro.ocultar-filtro + .tabla {
+		display: block;
+	}
+
+
+	/**
+	* Se ordenan los campos del filtro para móvil
+	*/
+	.filtro > div:nth-child(2) {
+		display: flex;
+	}
+	.filtro > div:nth-child(2) :nth-child(1) {
+		order: 2;
+	}
+	.filtro > div:nth-child(2) :nth-child(2) {
+		order: 1;
+	}
+	.filtro > div:nth-child(2) :nth-child(3) {
+		order: 4;
+	}
+	.filtro > div:nth-child(2) :nth-child(4) {
+		order: 3;
+	}
+	.filtro > div:nth-child(2) :nth-child(5) {
+		order: 5;
+	}
+	.filtro > div:nth-child(2) :nth-child(6) {
+		order: 6;
+	}
+
+	/**
+	* Boton "APLICAR" a la derecha en movil
+	*/
+	.filtro > div:nth-child(2) :nth-child(7) {
+		width: 10rem;
+		margin-top: 2rem;
+		margin-left: auto;
+	}
+	
+	/**
+	* Ancho Boton "APLICAR"
+	*/
+	.filtro > div:nth-child(2) :nth-child(7) button {
+		width: 9rem;
+	}
+	
+	/*---------------------------------------------*\
+		   Se configura la tabla responsiva
+	\*---------------------------------------------*/
+	
+	.table-responsive {
+		border-width: 0px !important;
+		font-family: "GothamRounded-Book"!important;
+	}
+
+	.table-responsive tr:nth-of-type(odd) {
+		background: #f5f5fa !important;
+	}
+
+	.ResponsiveTable,
+	.ResponsiveTable tbody,
+	.ResponsiveTable tr,
+	.ResponsiveTable td {
+		display: block;
+		width: 100%;
+	}
+
+	.ResponsiveTable {
+		border: 1px solid #eee !important;
+	}
+
+	.HeadRow {
+		position: absolute;
+		left: -9999px;
+		top: -9999px;
+	}
+
+	/**
+	* Columna derecha menos ancha
+	*/
+	.ResponsiveTable td {
+		border: none;
+		position: relative;
+		padding-left: 55%;
+		white-space: normal;
+		text-align: left;
+	}
+
+	/*
+	* Columna izquierda mas ancha
+	*/
+	.ResponsiveTable td:before {
+		position: absolute;
+		left: 5px;
+		width: 54%;
+		padding-right: 3px;
+		text-align: left;
+		content: attr(tableHeadData);
+		color: hsl(234, 79%, 32%);
+		font-weight: normal !important;
+		padding-left: 25px;
+	}
+
+	.ResponsiveTable tr:nth-of-type(odd) {
+		background: #ddd;
+	}
+
+	.ResponsiveTable tr {
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+
+	/**
+	* Columna derecha menos ancha solo 1era fila
+	*/
+	.ResponsiveTable .celda-titulo {
+		border-bottom: 1px solid #c7cae4;
+		text-align: left;
+		color: #111e90;
+		padding-left: 130px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	/**
+	* Columna izquierda mas ancha solo 1era fila
+	*/
+	.ResponsiveTable .celda-titulo:before {
+		content: attr(tableHeadData);
+		padding-left: 55px;
+		width: 9rem;
+	}
+
+	.ResponsiveTable td {
+		display: block;
+	}
+
+	/** 
+	* Alinea los iconos (tipo de seguros) de cada celda del campo cotizacion en móvil
+	*/
+	.iconoTipoSeguro {
+		position: absolute;
+		left: 28px;
+	}
+
+	/** 
+	* Alineo los 3 botones de accion a la izquierda
+	*/
+	.ResponsiveTable td:last-child {
+		text-align: left !important;
+	}
+	
+	/* 
+	* Los iconos de accion tienen padding, se lo quito solo al primero para que quede bien alineado a la columna
+	*/
+	.ResponsiveTable td:last-child button:nth-child(1) {
+		padding-left: 0;
+		margin-left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+    li .texto{
+		font-size: .9em !important;
+	}
+}

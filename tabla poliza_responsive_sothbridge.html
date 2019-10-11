@@ -1,0 +1,152 @@
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tabla Responsive</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="font/fuentes.css">
+      
+	<link rel="stylesheet" href="css/estilos_southbridge.css" type="text/css">
+	<script src="./scripts/jquery.slim.min.js"></script>	
+	<script src="./scripts/popper.min.js"></script>
+	<script src="./scripts/bootstrap/bootstrap-material-design.min.js"></script>
+	<script>
+		$(document).ready(function() { $('body').bootstrapMaterialDesign(); });	
+		
+		function ocultarFiltro(ocultar) {
+			if (ocultar)
+				$(".ocultarfiltro").hide();
+			else
+				$(".ocultarfiltro").show();
+		}
+	</script>
+
+</head>
+
+<body style="font-family:Gotham-Rounded !important">
+	<!-- ------------ FILTRO ------------ -->
+	
+	
+	<!-- ------------ TABLA ------------ -->
+	<div class="container-fluid mt-5 tabla">
+		<div class="titulo-Tabla">
+			<h5 class="nuevosiniestro" class="mb-4 sb-color-azul font-weight-bold">Giros de productos</h5>
+			<button class="btn btn-link py-0" onclick="ocultarFiltro(false);">
+				<img src="images/ic_more_vert.png" width="23px"/>
+			</button>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table ResponsiveTable" role="table">
+				<thead class="sb-background-azulClaro HeadRow" role="rowgroup" style="text-align: center;">
+					<tr role="row">
+						<th role="columnheader">Estado 1</th>
+						<th role="columnheader">Fecha de Estado</th>
+						<th role="columnheader" class="text-center">Observaciones</th>
+					</tr>
+				</thead>
+				<tbody role="rowgroup">
+					<tr role="row" style="text-align: center;">
+						<td tableheaddata="Nombre">Estado</td>
+                        <td tableheaddata="Producto">Fecha Estado</td>
+                        <td tableheaddata="Producto">Lorem Ipsum</td>
+					</tr>
+					<tr role="row" style="text-align: center;">
+						<td tableheaddata="Nombre">Estado 2</td>
+                        <td tableheaddata="Producto">Fecha Estado</td>
+                        <td tableheaddata="Producto">Lorem Ipsum</td>
+					</tr>
+					<tr role="row" style="text-align: center;">
+						<td tableheaddata="Nombre">Estado 3</td>
+                        <td tableheaddata="Producto">Fecha Estado</td>
+                        <td tableheaddata="Producto">Lorem Ipsum</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<!-- ------------ FULL SCREEN ------------ -->
+	<div class="modal fade" id="modalAgregarGiros" tabindex="-1" role="dialog" aria-labelledby="modalAgregarGiros" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header d-flex justify-content-start shadow">
+					<button type="button" class="close ml-0 pl-0" data-dismiss="modal" aria-label="Close" >
+						<img src="images/CruzGris.svg" alt="X" class="">
+					</button>
+					<h5 class="modal-title ml-3 sb-gris pt-0" id="exampleModalLabel">Agregar giro</h5>
+				</div>
+				<div class="modal-body">
+					<div class="d-flex justify-content-center vh-100">
+						<div class="align-self-center text-center contenido-modal-dialog-1">
+							<h4 class="sb-h4-azul">Crea un nuevo giro</h4>
+							
+							<div class="container-fluid pb-3 form-row">
+								<div class="form-group col-sm-6 col-md-8">
+									<label for="giro" class="bmd-label-static">Nombre giro</label>
+									<input type="text" class="form-control form-control-sm" id="giro" />
+								</div>
+								<div class="form-group col-sm-6 col-md-4">
+									<select formControlName="bancoBeneficiario" id="inputBeneficiario" class="custom-select d-block w-100" required>
+										<option>Producto</option>
+										<option>Comercio</option>
+										<option>Oficinas</option>
+										<option>Centros mé.</option>
+										<option>Educación</option>
+									</select>
+									<div class="lnk-accion">
+										<a href="#"> <i class="material-icons">add</i> Agregar producto</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="mt-4">
+								<div class="form-check-titulo">
+									<label>Factor RC</label>
+								</div>
+								<div class="form-check">
+									<label for="tipoEndosoAnular" class="gotham-book radio radio-margen-inferior-2 justify-content-start font-style-normal">
+										<input type="radio" name="tipoEndoso" id="tipoEndosoAnular" class="hidden" value="anular" (change)="onChange()"/>
+										<span class="label"></span>Venta anual
+									</label>
+								</div>
+
+								<div class="form-check">
+									<label for="tipoEndosoCancelar" class="gotham-book radio radio-margen-inferior-2 justify-content-start font-style-normal">
+										<input type="radio" name="tipoEndoso" id="tipoEndosoCancelar" class="hidden" value="cancelar" (change)="onChange()"/>
+										<span class="label"></span>Nº de alumnos
+									</label>
+								</div>
+								
+								<div class="form-check">
+									<label for="tipoEndosoModificar" class="gotham-book radio radio-margen-inferior-2 justify-content-start font-style-normal">
+										<input type="radio" name="tipoEndoso" id="tipoEndosoModificar" class="hidden" value="modificar" (change)="onChange()"/>
+										<span class="label"></span>Superficie
+									</label>
+								</div>
+								
+							</div>
+							
+							<div class="col-lg-10 div-abajo-der">
+								<button type="button" class="btn btn-default">
+								  GUARDAR
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+</html>
