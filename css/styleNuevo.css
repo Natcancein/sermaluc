@@ -127,3 +127,8 @@ table .thead-green th {
 .table-stripedSouthbridge tbody tr:nth-of-type(odd) {
     background-color: #49C3B133;
 }
+
+/* Tabla responsiva polizas */
+@media only screen and (max-width: 667px) {
+   
+    }

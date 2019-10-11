@@ -25,78 +25,75 @@
     <img src="img/logo-header-AIG.png" alt="Southbridge logo">
   </nav>
   <!--Contenedor-->
-<div class="container-fluid">
-  <div class="row">
-    <col class="col-12 text-left pl-4">
-    <h5 class="boldTitulo pl-3 pt-4 pb-4">Filtrar Por</h5></col>
-  </div>
- 
-
-
+  <div class="container-fluid">
     <div class="row">
-       <div class="col-12 col-md-10">
-          <div class="row">           
-              <div class="col-12 col-md-2">
-                  <label for="selectCorredor" class="lightTitulo" >Corredor</label>
-                  <select id="selectCorredor" class="lightTitulo form-control">
-                    <option selected>Seleccione Corredor</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
-              <div class="col-12 col-md-2 paddingInput">
-                <input type="text" class="lightTitulo form-control" placeholder="Nº de Póliza">
-              </div>
-              <div class="col-12 col-md-2 paddingInput">
-                <input type="text" class="lightTitulo form-control" placeholder="Certificado">
-              </div>
-              <div class="col-12 col-md-2 paddingInput">
-                <input type="text" class="lightTitulo form-control" placeholder="Rut Asegurado">
-              </div>
-              <div class="col-12 col-md-2 paddingInput">
-                <input type="text" class="lightTitulo form-control" placeholder="Nombre Asegurado">
-              </div>
-              <div class="col-12 col-md-2">
-                  <label for="selectSiniestro"  class="lightTitulo">Estado siniestro</label>
-                  <select id="selectSiniestro" class="lightTitulo form-control">
-                    <option selected>Todos</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
+      <col class="col-12 text-left pl-4">
+      <h5 class="boldTitulo pl-3 pt-4 pb-4">Filtrar Por</h5>
+      </col>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-2">
+            <label for="selectCorredor" class="lightTitulo">Corredor</label>
+            <select id="selectCorredor" class="lightTitulo form-control">
+              <option selected>Seleccione Corredor</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
-       </div>
-       <div class="col-12 d-flex justify-content-end col-md-2">
-          <button type="button" class="btn btn-primary btnAplicar d-flex justify-content-end">Aplicar</button>
+          <div class="col-12 col-md-2 paddingInput">
+            <input type="text" class="lightTitulo form-control" placeholder="Nº de Póliza">
+          </div>
+          <div class="col-12 col-md-2 paddingInput">
+            <input type="text" class="lightTitulo form-control" placeholder="Certificado">
+          </div>
+          <div class="col-12 col-md-2 paddingInput">
+            <input type="text" class="lightTitulo form-control" placeholder="Rut Asegurado">
+          </div>
+          <div class="col-12 col-md-2 paddingInput">
+            <input type="text" class="lightTitulo form-control" placeholder="Nombre Asegurado">
+          </div>
+          <div class="col-12 col-md-2">
+            <label for="selectSiniestro" class="lightTitulo">Estado siniestro</label>
+            <select id="selectSiniestro" class="lightTitulo form-control">
+              <option selected>Todos</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-end col-md-2">
+        <button type="button" class="btn btn-primary btnAplicar d-flex justify-content-end">Aplicar</button>
       </div>
     </div>
-            
-   <div class="row">
+
+    <div class="row">
       <col class="col-12 text-left pl-4">
-      <h5 class="boldTituloPolizas pl-3 pt-5 pb-4">Pólizas</h5></col>
-   </div>
-</div>
+      <h5 class="boldTituloPolizas pl-3 pt-5 pb-4">Pólizas</h5>
+      </col>
+    </div>
+  </div>
 
-
-  
   <!--TABLA-->
-<div class="container-fluid">
+  <div class="container-fluid d-none d-md-block">
     <table class="table">
-        <thead class="thead-green">
-          <tr>
-              <th class="text-center lightTitulo">Pólizas</th>
-              <th class="text-center lightTitulo">Certificado</th>
-              <th class="text-center lightTitulo">Renovación</th>
-              <th class="text-center lightTitulo">Endoso</th>
-              <th class="text-center lightTitulo">Vigencia</th>
-              <th class="text-center lightTitulo">Asegurado</th>
-              <th class="text-center lightTitulo">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
+      <thead class="thead-green">
+        <tr>
+          <th class="text-center lightTitulo">Pólizas</th>
+          <th class="text-center lightTitulo">Certificado</th>
+          <th class="text-center lightTitulo">Renovación</th>
+          <th class="text-center lightTitulo">Endoso</th>
+          <th class="text-center lightTitulo">Vigencia</th>
+          <th class="text-center lightTitulo">Asegurado</th>
+          <th class="text-center lightTitulo">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td class="text-center textoTabla1" contenteditable="true">0030000473-0
             <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
           </td>
@@ -110,8 +107,8 @@
             <img src="img/svg/add-24px.svg">
           </td>
         </tr>
-         <!-- Tabla embebida -->
-         <table class="table table-bordered table-responsive-md table-striped text-center">
+        <!-- Tabla embebida -->
+        <table class="table table-bordered table-responsive-md table-striped text-center">
           <thead>
             <tr class="textoTituloTablaEmbebida">
               <th class="text-center"><b>Número Siniestro</b></th>
@@ -161,60 +158,60 @@
             </tr>
           </tbody>
         </table>
-        </tbody>
-      </table>
-      <table class="table table-stripedSouthbridge">
-        <thead>
-          <tbody>
-          <tr>
-            <td class="text-center textoTabla1" contenteditable="true">0030000473-0
-              <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
-            </td>
-            <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-            <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-            <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-            <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
-            <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
-  
-            <td class="text-center">
-              <img src="img/svg/add-24px.svg">
-            </td>
-          </tr>
-          <tr>
-              <td class="text-center textoTabla1" contenteditable="true">0030000473-0
-                <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
-              </td>
-              <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-              <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-              <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-              <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
-              <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
-    
-              <td class="text-center">
-                <img src="img/svg/add-24px.svg">
-              </td>
-            </tr>
-            <tr>
-                <td class="text-center textoTabla1" contenteditable="true">0030000473-0
-                  <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
-                </td>
-                <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-                <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-                <td class="text-center textoTabla1" contenteditable="true">dummy</td>
-                <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
-                <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
-      
-                <td class="text-center">
-                  <img src="img/svg/add-24px.svg">
-                </td>
-              </tr>
-        </tbody>
-      </table>
-      
-</div>
-  
+      </tbody>
+    </table>
+    <table class="table table-stripedSouthbridge">
+      <thead>
+      <tbody>
+        <tr>
+          <td class="text-center textoTabla1" contenteditable="true">0030000473-0
+            <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
+          </td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
+          <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
 
-</div>
+          <td class="text-center">
+            <img src="img/svg/add-24px.svg">
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center textoTabla1" contenteditable="true">0030000473-0
+            <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
+          </td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
+          <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
+
+          <td class="text-center">
+            <img src="img/svg/add-24px.svg">
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center textoTabla1" contenteditable="true">0030000473-0
+            <img class="float-left" src="img/svg/arrow_drop_down_circle-24px.svg" style="width:24px;" alt="">
+          </td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">dummy</td>
+          <td class="text-center textoTabla1" contenteditable="true">Vigente</td>
+          <td class="text-center textoTabla1" contenteditable="true">Nombre Asegurado</td>
+
+          <td class="text-center">
+            <img src="img/svg/add-24px.svg">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+  </div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
