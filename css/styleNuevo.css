@@ -128,7 +128,10 @@ table .thead-green th {
     background-color: #49C3B133;
 }
 
-/* Tabla responsiva polizas */
-@media only screen and (max-width: 667px) {
-   
-    }
+.tablaMobile{
+    font-size: 0.7rem;
+}
+
+.tipografiaAzulTabla{
+    color:#101e8e;
+}
