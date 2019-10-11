@@ -151,15 +151,15 @@ table .thead-green th {
     font-size:1rem;
     color:#707070;
     padding-top: 1.7rem;
-    padding-left: 1.7rem;
+    padding-left: 1.4rem;
 }
 
-.tituloDatoSiniestro {
+.tituloDatoPoliza {
     font-size:0.8rem;
     color:#707070;
 }
 
-.datoSiniestro {
+.datoPoliza {
     font-size:1rem;
     color:#707070;
 }
