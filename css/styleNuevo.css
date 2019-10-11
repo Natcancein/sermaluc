@@ -31,6 +31,8 @@ body {
   
 }
 
+/*////// POLIZAS //////*/
+
 nav{
     background: #101E8E 0% 0% no-repeat padding-box;
 }
@@ -134,4 +136,10 @@ table .thead-green th {
 
 .tipografiaAzulTabla{
     color:#101e8e;
+}
+
+/*////// DETALLE SINIESTRO //////*/
+.tituloDetalleSiniestro{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
