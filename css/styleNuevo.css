@@ -123,3 +123,7 @@ table .thead-green th {
 .segundaFila{
  padding-bottom: -10rem;
 }
+
+.table-stripedSouthbridge tbody tr:nth-of-type(odd) {
+    background-color: #49C3B133;
+}
