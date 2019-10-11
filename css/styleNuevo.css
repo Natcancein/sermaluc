@@ -88,7 +88,7 @@ select.form-control:focus {
 
 }
 
-.boldTituloPolizas{
+.boldTituloPolizas, .boldTituloSiniestro{
 color:#101E8E;
 }
 
@@ -154,12 +154,12 @@ table .thead-green th {
     padding-left: 1.4rem;
 }
 
-.tituloDatoPoliza {
+.tituloDatoPoliza, .tituloDatoSiniestro {
     font-size:0.8rem;
     color:#707070;
 }
 
-.datoPoliza {
+.datoPoliza, .datoSiniestro {
     font-size:1rem;
     color:#707070;
 }
