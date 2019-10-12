@@ -50,7 +50,6 @@ nav img {
 }
 
 .boldTituloPequeno{
-    color: #707070;
     font-weight: normal;
     font-size: 0.8rem;
     color:#101E8E; 
@@ -314,3 +313,37 @@ input.cmn-toggle-round-flat + label {
     word-wrap: break-word; 
 
  }
+
+ /*////// POP UPS //////*/
+.confirmar {
+    margin-right: 15px!important;
+}
+ .tituloPopUp{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.tituloPopUp i{
+    font-size:1rem;
+    color:#707070;
+    padding-top: 2.5rem;
+    padding-left: 1.4rem;
+}
+
+ .popUpAlert{
+margin-top:13%;
+height: 60vh;
+ }
+
+.popUpAlert h3{
+    color: #101E8E;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.popUpAlert p{
+    color: #707070;
+    font-weight:lighter;
+    font-size: 1rem;
+}
