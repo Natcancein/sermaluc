@@ -290,3 +290,12 @@ input.cmn-toggle-round-flat + label {
   font-size:0.7rem;
    height: 2rem;;
  }
+
+ .btnEnviar{
+    background: #101e8e; 
+    color:#FFFFFF;
+    border: none!important;
+    white-space:normal !important;
+    word-wrap: break-word; 
+
+ }
