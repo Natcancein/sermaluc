@@ -53,7 +53,7 @@ nav img {
     color: #707070;
     font-weight: normal;
     font-size: 0.8rem;
-    color:#101E8E 
+    color:#101E8E; 
 }
 .lightTitulo{
     color: #707070;
@@ -80,6 +80,14 @@ input[type="text"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #101E8E;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
 .paddingInput {
@@ -200,3 +208,67 @@ table .thead-blue th {
     color: #111E90;
     font-size: 1rem;
 }
+
+/*////// INGRESO Y MODIFICACIÓN SINIESTRO //////*/
+
+.fondoAzulClaro{
+    background: #F5F6FA ;
+}
+
+/* Switch */
+.switch {
+    width: 1rem;
+}
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+
+input.cmn-toggle-round-flat + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #CED1E8;
+    border-radius: 30px;
+    transition: background 0.4s;
+  }
+  input.cmn-toggle-round-flat + label:before,
+  input.cmn-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: gray;
+  }
+  input.cmn-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 40px;
+    transition: background 0.4s;
+  }
+  input.cmn-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 20px;
+    background-color: #dddddd;
+    border-radius: 30px;
+    transition: margin 0.4s, background 0.4s;
+  }
+  input.cmn-toggle-round-flat:checked + label {
+    background-color: #101E8E;
+  }
+  input.cmn-toggle-round-flat:checked + label:after {
+    margin-left: 30px;
+    background-color: #101E8E;
+  }
