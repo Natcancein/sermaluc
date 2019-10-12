@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Detalle Siniestros</title>
+  <title>Ingresar Siniestros</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -20,49 +20,185 @@
 </head>
 
 <body>
-  <div class="row justify-content-center">
+      <!--Header-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <img style="padding: 80px" src="img/logo-header-AIG.png" alt="">
+        </nav>
 
-    <div class="md-form px-md-2">
-        <h6 style="color: #707070">Filtrar Por</h>
-            <select class="browser-default custom-select">
-                <option selected>Seleccione Corredor</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-  </div>
-  
-        
-        <div class="md-form px-md-2" style="padding-top: 15px;">
-              <input type="text" class="form-control" placeholder="Nº de Póliza">
-        </div>
-        <div class="md-form px-md-2" style="padding-top: 15px;">
-              <input type="text" class="form-control" placeholder="Certificado">
-        </div>
-        <div class="md-form px-md-2" style="padding-top: 15px;">
-              <input type="text" class="form-control" placeholder="RUT Asegurado">
-        </div>
-        <div class="md-form px-md-2" style="padding-top: 15px;">
-              <input type="text" class="form-control" placeholder="Nombre Asegurado">
-        </div>
-        <div class="md-form px-md-2">
-            <h6 style="color: #707070">Estado Siniestro</h>
-                <select class="browser-default custom-select">
-                    <option selected>Todos</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-      </div>
-      <div class="md-form px-md-2">
-          <button class="aplicar" type="button" class="btn btn-primary btn-rounded" style="background: #FFFFFF; color:#101e8e"><b>APLICAR</b></button>
-        </div>
-        
+        <!--columnas-->
+        <div class="container">
+          <div class="row">
+              
+            <div class="nuevosiniestro" class="col-sm">
+              Nuevo Siniestro
+            </div>
+            <div class="col-sm">
+              
+            </div>
+            <div class="col-sm">
+              
+            </div>
+          </div>
+          <!--Nuevo siniestro-->
+          
+          <div class="row" style="background-color:#F5F6FA;">
+            <div class="col-sm">
+              <p class="corredor" class="text-justify">Corredor</p>
+              <p class="nombrecorredor" class="text-justify">Nombre Corredor</p>
+              <p class="corredor" class="text-justify">Ramo</p>
+              <p class="nombrecorredor" class="text-justify">Ramo</p>
+            </div>
+            <div class="col-sm">
+              <p class="corredor" class="text-justify">Póliza</p>
+              <p class="nombrecorredor" class="text-justify">Número de Póliza</p>
+              <p class="corredor" class="text-justify">Asegurado</p>
+              <p class="nombrecorredor" class="text-justify">Datos del Asegurado</p>
+            </div>
+            <div class="col-sm">
+              <p class="corredor" class="text-justify">Certificado</p>
+              <p class="nombrecorredor" class="text-justify">Número de Certificado</p>
+              <p class="corredor" class="text-justify">Estado</p>
+              <p class="nombrecorredor" class="text-justify">Estado del Siniestro</p>
+            </div>
+          </div>
 
-      </div>
-  
-        
-    </div>
+              <!--Datos contacto-->
+              <div class="row">
+                <div class="nuevosiniestro" class="col-sm">
+                  Datos Contacto
+                </div>
+                <div class="col-sm">
+                  
+                </div>
+                <div class="col-sm">
+                  
+                </div>
+              </div>
+              <!--detalles del siniestro-->
+          <div class="row">
+                <div class="col-sm-4">
+                 
+                    <div class="custom-control custom-switch">
+                        <label class="custom-control-label " for="customSwitches">Mismo nombre de Corredor</label>
+                      <input type="checkbox" class="custom-control-input " id="customSwitches">
+                      <div class="md-form">
+                          <input type="text" class="form-control" placeholder="Nombre Asegurado">
+                    </div>
+                      
+                    </div>
+                </div>
+            <div class="col-sm-4">
+              <p class="corredor" class="text-justify">
+                <div class="md-form px-md-4" style="padding-top: 15px;">
+                  <input type="text" class="form-control" placeholder="Correo Electrónico">
+            </div>
+          </p>
+              <p class="nombrecorredor" class="text-justify"></p>
+            </div>
+            <div class="col-sm-4">
+              <p class="corredor" class="text-justify">
+                  <div class="md-form px-md-2" style="padding-top: 15px;">
+                  <input type="text" class="form-control" placeholder="Teléfono">
+            </div>
+              </p>
+              
+            </div>
+          </div>
+<!--Detalle del Siniestro-->
+          <div class="row">
+              <div class="nuevosiniestro" class="col-sm">
+                  Detalles del Siniestro
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-sm" style="color:#5C6670">
+                  <img  class="col-sm" class="float-left" src="img/svg/calendario.svg" style="width:24px;" alt="">
+                  Fecha
+                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="md-form px-md-4" style="padding-top: 15px;">
+                        <input type="text" class="form-control" placeholder="Hora de Siniestro">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="md-form px-md-4">
+                        <select class="browser-default custom-select">
+                            <option selected>Tipo de Siniestro</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                  </div>
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="md-form">
+                    <input type="text" class="form-control" placeholder="Lugar de Siniestro">
+              </div>
+              <div class="md-form px-md-4" style="padding-top: 15px;">
+                  <select class="browser-default custom-select">
+                      <option selected>Tipo de Siniestro</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="md-form">
+                    <input type="text" class="form-control" placeholder="Breve Descripción">
+              </div>
+            </div>
+          </div>
+          <!--datos adjuntos-->
+          <div class="row">
+            <div class="col-sm">
+                <div class="row">
+                    <div class="nuevosiniestro" class="col-sm">
+                      Adjuntos
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/svg/nuevo_adjunto.svg" style="width: 40%;" alt="">
+                      
+                    </div>
+                    <div class="col-sm">
+                      
+                    </div>
+                  </div>
+            </div>
+            
+            
+          </div>
+
+          <!--nombre documento-->
+          <div class="row">
+              <div class="corredor" class="col-sm-4">
+                <p>Nombre del Documento</p>
+                <p>Nombre del Documento 2</p>
+
+              </div>
+              <div class="col-sm-2">
+                  <img src="img/svg/lupagris.svg" alt="">
+                  <img src="img/svg/nube24px(2).svg" alt="">
+                  <img src="img/svg/trash.svg" alt="">
+                </div>
+
+               
+
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/svg/guardar_borrador.svg" style="width: 50%" alt="">
+                  <img src="img/svg/enviar_boton.svg" style="width: 30%;" alt="">
+
+
+                </div>
+
+            </div>
+        </div>
 
 
 
