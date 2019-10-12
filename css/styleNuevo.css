@@ -272,3 +272,9 @@ input.cmn-toggle-round-flat + label {
     margin-left: 30px;
     background-color: #101E8E;
   }
+
+  /* Fecha */
+
+  .bootstrap-iso .input-group .form-control {
+  width: 200px!important;
+}
