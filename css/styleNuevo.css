@@ -218,7 +218,7 @@ table .thead-blue th {
 
 /* Switch */
 .switch {
-    width: 1rem;
+    width: 0.8rem;
 }
 .cmn-toggle {
     position: absolute;
@@ -253,7 +253,7 @@ input.cmn-toggle-round-flat + label {
     left: 2px;
     bottom: 2px;
     right: 2px;
-    background-color: #fff;
+    background-color: #CED1E8;
     border-radius: 40px;
     transition: background 0.4s;
   }
@@ -262,13 +262,11 @@ input.cmn-toggle-round-flat + label {
     left: 4px;
     bottom: 4px;
     width: 20px;
-    background-color: #dddddd;
+    background-color: #b6b6b6;
     border-radius: 30px;
     transition: margin 0.4s, background 0.4s;
   }
-  input.cmn-toggle-round-flat:checked + label {
-    background-color: #101E8E;
-  }
+  
   input.cmn-toggle-round-flat:checked + label:after {
     margin-left: 30px;
     background-color: #101E8E;
