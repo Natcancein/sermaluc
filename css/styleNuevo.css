@@ -166,11 +166,42 @@ border-bottom: 1px solid #dee2e6;
 
 .tablaMobile{
     font-size: 0.7rem;
+    border-bottom:none;
+    border-top:none;
+    width: 100%;
+}
+
+.tableMobile thead th, .tableMobile2 thead th{
+    border-bottom: none!important;
+}
+
+.tablaMobile td, .tablaMobile th{
+    border-top:none!important;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.tablaMobile2 td, .tablaMobile2 th{
+    
+    background: #CED1E880;
+    font-size: 0.9rem;
+
+}
+
+.fondoVerdeClaro{
+    background: #49C3B133;
 }
 
 .tipografiaAzulTabla{
     color:#101e8e;
 }
+
+.tipografiaAzulTablaMobile{
+    color:#101e8e;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
 
 /*////// DETALLE SINIESTRO //////*/
 .tituloDetalleSiniestro{
