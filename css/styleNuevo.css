@@ -527,3 +527,9 @@ font-size: 0.8rem;
 .tableMobileBlue{
     background-color: #CED1E8;
 }
+
+/*////// DETALLE MENSAJES//////*/
+
+.textoPequeno{
+    font-size: 0.7rem;
+}
