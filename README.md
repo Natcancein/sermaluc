@@ -13,7 +13,7 @@ Proyecto Southbridge
 - popUpError.html
 - vistaPrevisualizadora.html
 ### Sprint 2
-- listaPolizasSiniestros.html
+- listaPolizaSiniestros.html
 ### Sprint 3
 - bandejaMensajes.html
 - ingresoMensajes.html
