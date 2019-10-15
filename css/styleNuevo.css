@@ -513,3 +513,17 @@ font-size: 0.8rem;
 .detalleMobile{
      margin-left:28%;
 }
+
+/*////// BANDEJA MENSAJES//////*/
+
+.borderBottom {
+    border-bottom: 1px solid gray;
+}
+
+.blue{
+    color: #101E8E;
+}
+
+.tableMobileBlue{
+    background-color: #CED1E8;
+}
