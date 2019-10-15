@@ -2,7 +2,7 @@
 Proyecto Southbridge
 
 ## Se crean los siguientes archivos:
-
+### Sprint 1
 - polizas.html
 - ingresoYMod_siniestro.html
 - detalle_siniestro.html
@@ -12,6 +12,12 @@ Proyecto Southbridge
 - popUpConfirm2.html
 - popUpError.html
 - vistaPrevisualizadora.html
+### Sprint 2
+- listaPolizasSiniestros.html
+### Sprint 3
+- bandejaMensajes.html
+- ingresoMensajes.html
+- detalleMensaje.html
 
 - styleNuevo.css
 
