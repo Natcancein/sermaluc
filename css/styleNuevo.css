@@ -28,7 +28,7 @@
    
 body {
     font-family:'Gotham-Rounded';
-  
+    font-weight: normal;
 }
 
 /*////// POLIZAS //////*/
@@ -336,14 +336,17 @@ input.cmn-toggle-round-flat + label {
    height: 2rem;;
  }
 
- .btnEnviar{
+ .btnEnviar, .btnDenuncie{
     background: #101e8e; 
     color:#FFFFFF;
     border: none!important;
     white-space:normal !important;
     word-wrap: break-word; 
-
+    border-radius: 0%;
+    font-size: normal;
+    font-weight: 500!important;
  }
+
 
  /*////// POP UPS //////*/
 .confirmar {
@@ -384,4 +387,149 @@ height: 60vh;
 .archivoPrueba{
     max-width: 100%; 
     height: 100vh;
+}
+
+/*////// LISTADO DE POLIZAS Y SINIESTROS //////*/
+.btnAtras{
+    background-color: #DFE0E2!important;
+    border:none;
+    border-radius: 0%;
+    font-weight: 400;
+    color:#717982;
+    width: 10rem;
+    margin-top:10rem;
+    font-size: 0.8rem;
+}
+
+.btnAtrasMobile{
+    background-color: #DFE0E2!important;
+    border:none;
+    border-radius: 0%;
+    font-weight: 400;
+    color:#717982;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    width: 155px;
+
+}
+
+
+.btnDetalle{
+    background-color: #DFE0E2!important;
+    border:none;
+    border-radius: 0%;
+    font-weight: 400;
+    color:#101E8E;
+    width: 10rem;
+    margin-top:10rem;
+    font-size:0.8rem;
+}
+
+.btnDetalleMobile{
+    background-color: #DFE0E2!important;
+    border:none;
+    border-radius: 0%;
+    font-weight: 400;
+    color:#101E8E;
+    width: 10rem;
+    margin-left:20%;
+    font-size:0.8rem;
+}
+
+.btnDenuncie ,.btnDenuncie:hover{
+    text-transform: capitalize!important;
+    font-size: 0.8rem;
+}
+
+.listadoPolizaSiniestro, .listadoPolizaSiniestroMobile{
+   border: 0.5px solid #707070;
+ 
+
+}
+.listadoPolizaSiniestroMobile{
+    overflow-x: hidden;
+     width: 98%;
+     margin:auto;
+     padding: 10px;
+     margin-bottom: 5px;
+ }
+
+ .listadoPolizaSiniestroMobile p{
+color: #707070;
+line-height:0.5;
+font-size: 0.8rem;
+ }
+
+.listadoPolizaSiniestro img{
+   width:100px;
+   margin-left:10%;
+ }
+
+ .listadoPolizaSiniestro h5{
+    color: #101E8E;
+  }
+
+  .listadoPolizaSiniestroMobile h5{
+    color: #101E8E;
+    font-size: 1rem;
+  }
+
+  .listadoPolizaSiniestro p{
+  color: #717982;
+  }
+ .bordeAzul{
+     border: 1px solid white;
+     padding: -100px;
+     width: 100%;
+     margin:auto;
+     margin: 1%;
+ }
+  .listadoPolizaSiniestroFondoAzul{
+    border: 1px solid #707070;
+    background-color:  #101E8E;
+ }
+
+ .listadoPolizaSiniestroFondoAzul img{
+    width:100px;
+    padding-top: 5px;
+ }
+
+ .listadoPolizaSiniestroFondoAzul h6 {
+   color:#FFFFFF;
+   font-weight: lighter;
+ }
+
+ .listadoPolizaSiniestroFondoAzul p{
+     font-size: 0.8rem;
+     font-weight: lighter;
+     color:#FFFFFF;
+     line-height:0.5;
+ }
+
+ .btnEnviarMobile{
+    margin-left:28%;
+}
+
+.detalleMobile{
+     margin-left:28%;
+}
+
+/*////// BANDEJA MENSAJES//////*/
+
+.borderBottom {
+    border-bottom: 1px solid gray;
+}
+
+.blue{
+    color: #101E8E;
+}
+
+.tableMobileBlue{
+    background-color: #CED1E8;
+}
+
+/*////// DETALLE MENSAJES//////*/
+
+.textoPequeno{
+    font-size: 0.7rem;
 }
