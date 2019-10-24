@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family:'Gotham-Rounded';
     src:url('../font/gotham-rounded/GothamRounded-Light.otf') format('opentype');
@@ -174,6 +175,36 @@ box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
     -moz-box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
     box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
 }
+
+.btnAplicarMiniVerdeClaroL{
+    background: #77BC1F; 
+    color:#FFFFFF;
+    border: none!important;
+    white-space:normal !important;
+    word-wrap: break-word; 
+    font-size: 0.7rem;
+    width:150px;
+    padding-top: -10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+    -moz-box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+    box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+}
+
+.btnAplicarMiniVerdeClaroL:hover{
+    background: #FFFFFF; 
+    color:#77BC1F; 
+    border: 1px solid #77BC1F!important;
+    white-space:normal !important;
+    word-wrap: break-word; 
+    font-size: 0.7rem;
+    padding-top: -10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+    -moz-box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+    box-shadow: 2px 10px 21px -13px rgba(120,114,120,1);
+}
+
 .btnAplicarMiniVerdeL:hover{
     background: #FFFFFF; 
     color:#008065; 
@@ -347,66 +378,95 @@ table .thead-blue th {
     font-size: 1rem;
 }
 
+
 /*////// INGRESO Y MODIFICACIÓN SINIESTRO //////*/
+
+.guardarBorrador{
+    color: #008065;
+    font-size: 0.7rem;
+}
 
 .fondoAzulClaro{
     background: #F5F6FA ;
 }
 
+
+
 /* Switch */
-.switch {
-    width: 0.8rem;
-}
-.cmn-toggle {
-    position: absolute;
-    margin-left: -9999px;
-    visibility: hidden;
-  }
-  .cmn-toggle + label {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    user-select: none;
+section {
+    margin-left:10px;
+    float: left;
+    min-width: 150px;
+    width: 33.33%;
+    padding: 60px 0;
+    min-height: 100px;
   }
 
-input.cmn-toggle-round-flat + label {
-    padding: 2px;
-    width: 60px;
-    height: 30px;
-    background-color: #CED1E8;
-    border-radius: 30px;
-    transition: background 0.4s;
-  }
-  input.cmn-toggle-round-flat + label:before,
-  input.cmn-toggle-round-flat + label:after {
-    display: block;
-    position: absolute;
-    content: "";
-    background-color: gray;
-  }
-  input.cmn-toggle-round-flat + label:before {
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    right: 2px;
-    background-color: #CED1E8;
-    border-radius: 40px;
-    transition: background 0.4s;
-  }
-  input.cmn-toggle-round-flat + label:after {
-    top: 4px;
-    left: 4px;
-    bottom: 4px;
-    width: 20px;
-    background-color: #b6b6b6;
-    border-radius: 30px;
-    transition: margin 0.4s, background 0.4s;
+  /*=====================*/
+.checkbox {
+    position: relative;
+    display: inline-block;
   }
   
-  input.cmn-toggle-round-flat:checked + label:after {
-    margin-left: 30px;
-    background-color: #101E8E;
+  .checkbox label {
+    width: 90px;
+    height: 42px;
+    background: #ccc;
+    position: relative;
+    display: inline-block;
+    border-radius: 46px;
+    transition: 0.4s;
+  }
+  .checkbox label:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 0;
+    top: -5px;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+  }
+  .checkbox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkbox input:hover + label:after {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+  }
+  .checkbox input:checked + label:after {
+    left: 40px;
+  }
+  
+  
+  
+.model-4 .checkbox label {
+    background: #bbb;
+    height: 15px;
+    width: 65px;
+    margin-top: -15px;
+  }
+  .model-4 .checkbox label:after {
+    background: #fff;
+    top: -8px;
+    width: 28px;
+    height: 28px;
+  }
+  .model-4 .checkbox input:checked + label {
+    background: #77C2BB;
+  }
+  .model-4 .checkbox input:checked + label:after {
+    background: #009688;
+    left: 40px;
   }
 
   /* Fecha */
